@@ -12,9 +12,7 @@
 
 ## 👤 Автор
 
-**Работу выполнил студент МГПУ**
-
-**Варданян Роберт Барсегович**
+**Работу выполнил студент МГПУ**: **Варданян Роберт Барсегович**
 
 **Группа:БД251м** 
 
@@ -70,6 +68,7 @@
 ```
 ├── README.md
 ├── chinook.db
+├── chinookdb.png
 ├── bi_lw_01_pandas_sqlite_student.ipynb
 ├── pandas_workbook_student.ipynb
 └── variant_9_solution.py
