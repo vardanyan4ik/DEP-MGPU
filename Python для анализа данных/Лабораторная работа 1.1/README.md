@@ -30,7 +30,7 @@
 - Задание 5: Количество клиентов по городам
 
 ### 2. DataFrame в Pandas
-📓 [Рабочая тетрадь: SQLite и Pandas](bi_lw_01_pandas_sqlite_student_.ipynb)
+📓 [Рабочая тетрадь: SQLite и Pandas](bi_lw_01_pandas_sqlite_student_.ipynb) 
 
 
 
