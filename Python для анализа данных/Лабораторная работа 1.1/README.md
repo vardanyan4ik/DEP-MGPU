@@ -61,6 +61,6 @@
 ├── README.md
 ├── chinook.db
 ├── chinookdb.png
-├── bi_lw_01_pandas_sqlite_student.ipynb
-└── pandas_workbook_student.ipynb
+├── bi_lw_01_pandas_sqlite_student_.ipynb
+└── pandas_workbook_student_ipynb_.ipynb
 ```
