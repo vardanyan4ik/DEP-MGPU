@@ -115,18 +115,6 @@
 
 ---
 
-## 🚀 Запуск
-
-```bash
-# Установка зависимостей
-pip install pandas numpy matplotlib seaborn scikit-learn
-
-# Запуск Jupyter Notebook
-jupyter notebook bi_ml_4_lw_student.ipynb
-```
-
----
-
 ## 📈 Метрики качества
 
 ### Матрица ошибок (бизнес-интерпретация)
