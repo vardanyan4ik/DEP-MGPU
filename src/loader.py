@@ -11,8 +11,8 @@ import pandas as pd
 from pathlib import Path
 
 
-# URL источника данных (Kaggle Financial Statements)
-DATA_SOURCE_URL = "https://www.kaggle.com/datasets/rish59/financial-statements-of-major-companies"
+# URL источника данных (SimFin Financial Data)
+DATA_SOURCE_URL = "https://simfin.com/data/access/api"
 
 # Локальный путь к данным
 DATA_DIR = Path(__file__).parent.parent / "data"
