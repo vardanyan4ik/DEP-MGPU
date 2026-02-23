@@ -150,6 +150,20 @@ def print_liquidity_report(df: pd.DataFrame) -> None:
     print("=" * 70)
 
 
+def get_liquidity_summary(df: pd.DataFrame) -> dict:
+    """
+    Краткая сводка по ликвидности всех компаний.
+    Эта функция добавлена для демонстрации cherry-pick.
+    """
+    result = analyze_liquidity(df)
+    return {
+        'avg_current_ratio': round(result['current_ratio'].mean(), 2),
+        'avg_quick_ratio': round(result['quick_ratio'].mean(), 2),
+        'avg_cash_ratio': round(result['cash_ratio'].mean(), 2),
+        'companies_analyzed': len(result)
+    }
+
+
 if __name__ == "__main__":
     print("=== CDAP: Анализ ликвидности активов ===")
     print()
