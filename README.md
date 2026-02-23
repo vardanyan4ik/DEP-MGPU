@@ -97,7 +97,3 @@ git cherry-pick <commit-hash>
 | `feature/data-loader` | Разработка загрузчика данных |
 | `feature/liquidity-calc` | Разработка расчёта коэффициентов |
 
----
-
-## Лицензия
-Учебный проект. МИРЭА, 2026.
