@@ -1,0 +1,20 @@
+# CDAP - Corporate Data Analytics Platform
+# Зависимости для анализа ликвидности активов
+
+# Работа с данными
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Визуализация
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Jupyter
+jupyter>=1.0.0
+notebook>=7.0.0
+
+# HTTP запросы (для API)
+requests>=2.31.0
+
+# Утилиты
+python-dateutil>=2.8.0
