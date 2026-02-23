@@ -11,8 +11,8 @@ import pandas as pd
 from pathlib import Path
 
 
-# URL источника данных (Kaggle Financial Statements)
-DATA_SOURCE_URL = "https://www.kaggle.com/datasets/rish59/financial-statements-of-major-companies"
+# URL источника данных (Yahoo Finance API)
+DATA_SOURCE_URL = "https://query1.finance.yahoo.com/v8/finance"
 
 # Локальный путь к данным
 DATA_DIR = Path(__file__).parent.parent / "data"
