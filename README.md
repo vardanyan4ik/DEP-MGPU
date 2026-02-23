@@ -1,4 +1,3 @@
-# Corporate Data Analytics Platform (CDAP)
 ## Анализ ликвидности активов
 
 ### Информация о студенте
