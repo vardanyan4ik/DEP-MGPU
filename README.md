@@ -166,9 +166,3 @@ DATA_SOURCE_URL = "https://simfin.com/data/access/api"
 DATA_SOURCE_URL = "https://query1.finance.yahoo.com/v8/finance"
 DATA_SOURCE_URL_BACKUP = "https://simfin.com/data/access/api"
 ```
-
----
-
-## Лицензия
-
-Учебный проект. МИРЭА, 2026.
