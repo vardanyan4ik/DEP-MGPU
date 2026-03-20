@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: finance-lab
+  labels:
+    project: liquidity-app
+    env: dev

@@ -1,0 +1,23 @@
+http://127.0.0.1:18080
+{
+  "path": "/health",
+  "headers": {
+    "host": "127.0.0.1:18080",
+    "user-agent": "curl/8.4.0",
+    "accept": "*/*"
+  },
+  "method": "GET",
+  "body": "",
+  "fresh": false,
+  "hostname": "127.0.0.1",
+  "ip": "::ffff:127.0.0.1",
+  "ips": [],
+  "protocol": "http",
+  "query": {},
+  "subdomains": [],
+  "xhr": false,
+  "os": {
+    "hostname": "liquidity-app-65f68c7884-frznk"
+  },
+  "connection": {}
+}

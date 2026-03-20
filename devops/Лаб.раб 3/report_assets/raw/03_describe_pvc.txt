@@ -1,0 +1,21 @@
+Name:          db-pvc
+Namespace:     finance-lab
+StorageClass:  standard
+Status:        Bound
+Volume:        pvc-7329fd2e-fc53-4720-a4f0-f3022dbe852c
+Labels:        <none>
+Annotations:   pv.kubernetes.io/bind-completed: yes
+               pv.kubernetes.io/bound-by-controller: yes
+               volume.beta.kubernetes.io/storage-provisioner: k8s.io/minikube-hostpath
+               volume.kubernetes.io/storage-provisioner: k8s.io/minikube-hostpath
+Finalizers:    [kubernetes.io/pvc-protection]
+Capacity:      1Gi
+Access Modes:  RWO
+VolumeMode:    Filesystem
+Used By:       db-764c9b6c99-pbvl7
+Events:
+  Type    Reason                 Age    From                                                               Message
+  ----    ------                 ----   ----                                                               -------
+  Normal  ExternalProvisioning   6m58s  persistentvolume-controller                                        Waiting for a volume to be created either by the external provisioner 'k8s.io/minikube-hostpath' or manually by the system administrator. If volume creation is delayed, please verify that the provisioner is running and correctly registered.
+  Normal  Provisioning           6m58s  k8s.io/minikube-hostpath_lr3_639a511e-d0df-4c7c-b2fc-af613f543445  External provisioner is provisioning volume for claim "finance-lab/db-pvc"
+  Normal  ProvisioningSucceeded  6m58s  k8s.io/minikube-hostpath_lr3_639a511e-d0df-4c7c-b2fc-af613f543445  Successfully provisioned volume pvc-7329fd2e-fc53-4720-a4f0-f3022dbe852c

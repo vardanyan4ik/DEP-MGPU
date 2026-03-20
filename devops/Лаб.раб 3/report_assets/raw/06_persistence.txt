@@ -1,0 +1,3 @@
+before_delete_count=2
+after_delete_count=2
+new_db_pod=db-764c9b6c99-q4q95

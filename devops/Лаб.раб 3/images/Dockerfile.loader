@@ -1,0 +1,5 @@
+FROM postgres:16-alpine
+WORKDIR /app
+COPY lr2-loader/loader.sh /app/loader.sh
+RUN chmod +x /app/loader.sh
+CMD ["/app/loader.sh"]

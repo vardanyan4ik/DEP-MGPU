@@ -1,0 +1,4 @@
+loader: creating demo table and inserting rows
+CREATE TABLE
+INSERT 0 2
+loader: completed

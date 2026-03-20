@@ -1,0 +1,52 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: liquidity-app
+  namespace: finance-lab
+  labels:
+    app: liquidity-app
+    project: liquidity-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: liquidity-app
+  template:
+    metadata:
+      labels:
+        app: liquidity-app
+        project: liquidity-app
+    spec:
+      initContainers:
+        - name: wait-for-db
+          image: busybox:1.36
+          command:
+            - sh
+            - -c
+            - until nc -z db-service 5432; do echo "waiting for db"; sleep 2; done
+      containers:
+        - name: app
+          image: lr2-app:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080
+              name: http
+          envFrom:
+            - configMapRef:
+                name: liquidity-config
+            - secretRef:
+                name: liquidity-secret
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8080
+            initialDelaySeconds: 20
+            periodSeconds: 10
+            failureThreshold: 3
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 8080
+            initialDelaySeconds: 10
+            periodSeconds: 5
+            failureThreshold: 3

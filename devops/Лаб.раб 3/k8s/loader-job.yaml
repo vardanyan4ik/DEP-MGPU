@@ -1,0 +1,33 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: loader-job
+  namespace: finance-lab
+  labels:
+    app: loader
+    project: liquidity-app
+spec:
+  backoffLimit: 2
+  template:
+    metadata:
+      labels:
+        app: loader
+        project: liquidity-app
+    spec:
+      restartPolicy: Never
+      initContainers:
+        - name: wait-for-db
+          image: busybox:1.36
+          command:
+            - sh
+            - -c
+            - until nc -z db-service 5432; do echo "waiting for db"; sleep 2; done
+      containers:
+        - name: loader
+          image: lr2-loader:latest
+          imagePullPolicy: IfNotPresent
+          envFrom:
+            - configMapRef:
+                name: liquidity-config
+            - secretRef:
+                name: liquidity-secret
