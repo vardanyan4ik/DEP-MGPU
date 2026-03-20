@@ -302,22 +302,22 @@ new_db_pod=db-764c9b6c99-pbvl7
 ### 4.9 Скриншоты терминала с результатами
 
 Рисунок 1. Состояние всех ресурсов в namespace `finance-lab`.
-![kubectl get all](/Users/robertvardanyan/Documents/Playground/report_assets/screens/01_get_all.svg)
+![kubectl get all](![kubectl get all](report_assets/screens/01_get_all.svg))
 
 Рисунок 2. Подробности deployment приложения (`envFrom`, probes, initContainer).
-![describe deployment](/Users/robertvardanyan/Documents/Playground/report_assets/screens/02_describe_app.svg)
+![describe deployment](![describe deployment](report_assets/screens/02_describe_app.svg))
 
 Рисунок 3. Состояние и параметры PVC `db-pvc`.
-![describe pvc](/Users/robertvardanyan/Documents/Playground/report_assets/screens/03_describe_pvc.svg)
+![describe pvc]![describe pvc](report_assets/screens/03_describe_pvc.svg))
 
 Рисунок 4. Логи `loader-job` (создание таблицы и вставка данных).
-![loader logs](/Users/robertvardanyan/Documents/Playground/report_assets/screens/04_loader_logs.svg)
+![loader logs](![loader logs](report_assets/screens/04_loader_logs.svg))
 
 Рисунок 5. Ответ приложения по endpoint `/health`.
-![health endpoint](/Users/robertvardanyan/Documents/Playground/report_assets/screens/05_health.svg)
+![health endpoint](![health endpoint](report_assets/screens/05_health.svg))
 
 Рисунок 6. Проверка персистентности после удаления pod базы данных.
-![persistence check](/Users/robertvardanyan/Documents/Playground/report_assets/screens/06_persistence.svg)
+![persistence check](![persistence check](report_assets/screens/06_persistence.svg))
 
 ---
 
