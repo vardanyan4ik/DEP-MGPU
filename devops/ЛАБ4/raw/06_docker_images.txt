@@ -1,0 +1,2 @@
+REPOSITORY                    TAG               SIZE
+liquidity-app-ci              smoke             271MB

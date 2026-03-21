@@ -1,0 +1,59 @@
+pipeline {
+    agent any
+    environment {
+        IMAGE_NAME = 'liquidity-app-ci'
+        TARGET_PLATFORMS = 'linux/amd64,linux/arm64'
+    }
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+        stage('Lint') {
+            steps {
+                sh 'python3 -m py_compile app/*.py'
+            }
+        }
+        stage('Quality Gate: Multi-Arch Config') {
+            steps {
+                sh '''
+                echo "[gate] TARGET_PLATFORMS=$TARGET_PLATFORMS"
+                echo "$TARGET_PLATFORMS" | grep -q 'linux/amd64' || (echo 'missing linux/amd64' && exit 1)
+                echo "$TARGET_PLATFORMS" | grep -q 'linux/arm64' || (echo 'missing linux/arm64' && exit 1)
+                '''
+            }
+        }
+        stage('Build Multi-Arch') {
+            steps {
+                sh '''
+                docker buildx create --name ci_builder --use || docker buildx use ci_builder
+                docker buildx inspect --bootstrap
+                mkdir -p raw
+                docker buildx build \
+                  --platform $TARGET_PLATFORMS \
+                  --build-arg APP_VERSION=${BUILD_NUMBER} \
+                  -t ${IMAGE_NAME}:${BUILD_NUMBER} \
+                  --output=type=oci,dest=raw/liquidity_multiarch_${BUILD_NUMBER}.tar \
+                  app
+                '''
+            }
+        }
+        stage('Test Run') {
+            steps {
+                sh '''
+                docker build -t ${IMAGE_NAME}:smoke --build-arg APP_VERSION=${BUILD_NUMBER} app
+                CID=$(docker run -d -p 18000:8000 ${IMAGE_NAME}:smoke)
+                sleep 5
+                curl -fsS http://localhost:18000/health
+                docker rm -f $CID
+                '''
+            }
+        }
+    }
+    post {
+        always {
+            sh 'docker buildx rm ci_builder || true'
+        }
+    }
+}

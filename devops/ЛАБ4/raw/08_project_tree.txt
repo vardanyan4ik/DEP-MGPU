@@ -1,0 +1,22 @@
+project tree
+./.env
+./.github/workflows/ci.yml
+./.gitignore
+./Jenkinsfile
+./README.md
+./app/.dockerignore
+./app/Dockerfile
+./app/loader.py
+./app/main.py
+./app/requirements.txt
+./ci/run_local_pipeline.sh
+./docker-compose.yml
+./raw/01_pipeline_fail.txt
+./raw/02_pipeline_success.txt
+./raw/03_pipeline_success_short.txt
+./raw/04_buildx_ls.txt
+./raw/05_multiarch_artifact.txt
+./raw/06_docker_images.txt
+./raw/08_project_tree.txt
+./raw/liquidity_multiarch_success.tar
+./raw/smoke_health_success.txt

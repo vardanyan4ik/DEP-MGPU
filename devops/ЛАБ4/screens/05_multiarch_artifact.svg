@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="98" viewBox="0 0 1240 98">
+<rect x="0" y="0" width="1240" height="98" fill="#0b1020" rx="14"/>
+<rect x="0" y="0" width="1240" height="34" fill="#141b2f" rx="14"/>
+<circle cx="18" cy="17" r="5" fill="#ff5f56"/>
+<circle cx="36" cy="17" r="5" fill="#ffbd2e"/>
+<circle cx="54" cy="17" r="5" fill="#27c93f"/>
+<text x="74" y="22" fill="#b9c6e8" font-family="Menlo, Monaco, Consolas, monospace" font-size="12">05_multiarch_artifact</text>
+<g font-family="Menlo, Monaco, Consolas, monospace" font-size="14"><text x="20" y="54" fill="#d7e3ff">-rw-r--r--@ 1 robertvardanyan  staff   115M Mar 21 19:07 raw/liquidity_multiarch_success.tar</text></g>
+</svg>

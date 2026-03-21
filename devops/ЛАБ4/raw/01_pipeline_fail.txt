@@ -1,0 +1,4 @@
+[stage] Lint
+[stage] Quality Gate: Multi-Arch Config
+TARGET_PLATFORMS=linux/amd64
+Quality gate failed: missing linux/arm64
