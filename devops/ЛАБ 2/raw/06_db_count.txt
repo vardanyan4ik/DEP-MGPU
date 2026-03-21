@@ -1,0 +1,5 @@
+ rows_in_liquidity_metrics 
+---------------------------
+                       960
+(1 row)
+

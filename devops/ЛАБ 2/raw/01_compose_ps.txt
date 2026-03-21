@@ -1,0 +1,3 @@
+NAME            IMAGE                   COMMAND                  SERVICE         CREATED          STATUS                   PORTS
+liquidity_app   project-analytics_app   "uvicorn main:app --…"   analytics_app   14 seconds ago   Up 11 seconds            0.0.0.0:8000->8000/tcp, [::]:8000->8000/tcp
+liquidity_db    postgres:16-alpine      "docker-entrypoint.s…"   db              2 minutes ago    Up 2 minutes (healthy)   5432/tcp

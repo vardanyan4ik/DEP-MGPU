@@ -1,0 +1,8 @@
+GET /health
+{"status":"ok","service":"analytics_app"}
+
+GET /version
+{"app_version":"2.9.0"}
+
+GET /
+{"project":"Liquidity App","app_version":"2.9.0","rows_in_db":960,"latest_records":[{"asset":"SOL","avg_liquidity_ratio":1.6811,"report_date":"2025-04-30"},{"asset":"BNB","avg_liquidity_ratio":1.0196,"report_date":"2025-04-30"},{"asset":"BTC","avg_liquidity_ratio":2.2135,"report_date":"2025-04-30"},{"asset":"ETH","avg_liquidity_ratio":1.1933,"report_date":"2025-04-30"},{"asset":"XRP","avg_liquidity_ratio":1.6413,"report_date":"2025-04-30"}]}

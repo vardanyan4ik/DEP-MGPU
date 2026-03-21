@@ -1,0 +1,25 @@
+project tree
+./.env
+./.gitignore
+./README.md
+./app/.dockerignore
+./app/Dockerfile
+./app/loader.py
+./app/main.py
+./app/requirements.txt
+./data/liquidity_metrics.csv
+./docker-compose.yml
+./generate_data.py
+./raw/01_compose_ps.txt
+./raw/02_docker_ps.txt
+./raw/03_loader_logs.txt
+./raw/04_app_logs.txt
+./raw/05_api_checks.txt
+./raw/06_db_count.txt
+./raw/07_project_tree.txt
+./screens/01_compose_ps.svg
+./screens/02_docker_ps.svg
+./screens/03_loader_logs.svg
+./screens/04_app_logs.svg
+./screens/05_api_checks.svg
+./screens/06_db_count.svg

@@ -1,0 +1,3 @@
+liquidity_loader  | [loader] DB is ready (attempt=1)
+liquidity_loader  | [loader] Data already exists. Skip loading.
+liquidity_loader  | [loader] Completed.

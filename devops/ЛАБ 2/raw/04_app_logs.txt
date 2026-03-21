@@ -1,0 +1,5 @@
+liquidity_app  | INFO:     Started server process [1]
+liquidity_app  | INFO:     Waiting for application startup.
+liquidity_app  | INFO:     Starting Liquidity FastAPI | version=2.9.0
+liquidity_app  | INFO:     Application startup complete.
+liquidity_app  | INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
