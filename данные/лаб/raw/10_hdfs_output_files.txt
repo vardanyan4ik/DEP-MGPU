@@ -1,0 +1,9 @@
+$ hdfs dfs -ls /user/hadoop/lab_01/output/
+Found 2 items
+drwxr-xr-x   - hadoop supergroup          0 2026-03-29 14:29 /user/hadoop/lab_01/output/monthly_total
+drwxr-xr-x   - hadoop supergroup          0 2026-03-29 14:29 /user/hadoop/lab_01/output/seasonal_coefficients
+
+$ hdfs dfs -ls /user/hadoop/lab_01/output/monthly_total/
+Found 2 items
+-rw-r--r--   1 hadoop supergroup       3180 2026-03-29 14:29 /user/hadoop/lab_01/output/monthly_total/part-00000-...csv
+-rw-r--r--   1 hadoop supergroup          0 2026-03-29 14:29 /user/hadoop/lab_01/output/monthly_total/_SUCCESS

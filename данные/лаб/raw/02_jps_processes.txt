@@ -1,0 +1,7 @@
+$ jps
+68231 NameNode
+68412 DataNode
+68740 SecondaryNameNode
+68911 ResourceManager
+69103 NodeManager
+69455 Jps

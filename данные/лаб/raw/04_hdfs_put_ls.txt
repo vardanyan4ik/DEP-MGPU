@@ -1,0 +1,6 @@
+$ hdfs dfs -mkdir -p /user/hadoop/lab_01/input
+$ hdfs dfs -chmod 775 /user/hadoop/lab_01
+$ hdfs dfs -put /home/hadoop/Downloads/data/train.csv /user/hadoop/lab_01/input/
+$ hdfs dfs -ls /user/hadoop/lab_01/input/
+Found 1 items
+-rw-r--r--   1 hadoop supergroup   50963460 2026-03-29 14:22 /user/hadoop/lab_01/input/train.csv
