@@ -1,0 +1,108 @@
+version: "3.9"
+
+services:
+  mongodb:
+    image: mongo:7.0
+    container_name: lab2_mongodb
+    restart: unless-stopped
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: admin123
+    ports:
+      - "28217:27017"
+    volumes:
+      - mongo_data:/data/db
+    networks:
+      - polyglot_net
+
+  mongo-express:
+    image: mongo-express:1.0.2
+    container_name: lab2_mongo_express
+    restart: unless-stopped
+    depends_on:
+      - mongodb
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: admin
+      ME_CONFIG_MONGODB_ADMINPASSWORD: admin123
+      ME_CONFIG_MONGODB_URL: mongodb://admin:admin123@mongodb:27017/
+      ME_CONFIG_BASICAUTH_USERNAME: lab
+      ME_CONFIG_BASICAUTH_PASSWORD: lab123
+    ports:
+      - "28203:8081"
+    networks:
+      - polyglot_net
+
+  mongo-express-admin:
+    image: mongo-express:1.0.2
+    container_name: lab2_mongo_admin
+    restart: unless-stopped
+    depends_on:
+      - mongodb
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: admin
+      ME_CONFIG_MONGODB_ADMINPASSWORD: admin123
+      ME_CONFIG_MONGODB_URL: mongodb://admin:admin123@mongodb:27017/
+      ME_CONFIG_BASICAUTH: "false"
+    ports:
+      - "28204:8081"
+    networks:
+      - polyglot_net
+
+  cassandra:
+    image: cassandra:4.1
+    container_name: lab2_cassandra
+    restart: unless-stopped
+    environment:
+      CASSANDRA_CLUSTER_NAME: StreamingLabCluster
+      CASSANDRA_DC: dc1
+      CASSANDRA_RACK: rack1
+      MAX_HEAP_SIZE: 512M
+      HEAP_NEWSIZE: 128M
+    ports:
+      - "29042:9042"
+    volumes:
+      - cassandra_data:/var/lib/cassandra
+    networks:
+      - polyglot_net
+
+  graphdb:
+    image: ontotext/graphdb:10.6.4
+    container_name: lab2_graphdb
+    restart: unless-stopped
+    ports:
+      - "7200:7200"
+    volumes:
+      - graphdb_home:/opt/graphdb/home
+    networks:
+      - polyglot_net
+
+  redis:
+    image: redis:7.2-alpine
+    container_name: lab2_redis
+    restart: unless-stopped
+    ports:
+      - "28179:6379"
+    networks:
+      - polyglot_net
+
+  redis-commander:
+    image: rediscommander/redis-commander:latest
+    container_name: lab2_redis_commander
+    restart: unless-stopped
+    depends_on:
+      - redis
+    environment:
+      REDIS_HOSTS: local:redis:6379
+    ports:
+      - "28119:8081"
+    networks:
+      - polyglot_net
+
+volumes:
+  mongo_data:
+  cassandra_data:
+  graphdb_home:
+
+networks:
+  polyglot_net:
+    driver: bridge

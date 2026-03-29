@@ -1,0 +1,10 @@
+$ mongosh --host localhost --port 28217 -u admin -p '***' --authenticationDatabase admin
+use streaming_analytics
+load('scripts/mongo/01_seed_collections.js')
+Seed completed: user_profiles=20, content_catalog=4
+load('scripts/mongo/03_crud_examples.js')
+=== CRUD demo ===
+Read one: { _id: 101, name: 'Demo User', city: 'Moscow', subscription: 'Basic' }
+After update: { _id: 101, city: 'Saint Petersburg', subscription: 'Premium' }
+After delete count:
+0

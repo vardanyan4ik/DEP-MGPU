@@ -1,0 +1,13 @@
+PREFIX ex: <http://example.org/movie/>
+PREFIX schema: <http://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?title ?year ?comments
+WHERE {
+  ?movie a ex:Movie ;
+         schema:name ?title ;
+         ex:releaseYear ?year ;
+         ex:commentCount ?comments .
+  FILTER (?comments > 1000)
+}
+ORDER BY DESC(?comments)

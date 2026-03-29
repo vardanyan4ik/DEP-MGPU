@@ -1,0 +1,8 @@
+SPARQL: 02_pre1980_actor_director_same.rq
++-------------+------+-------------------+
+| title       | year | personName        |
++-------------+------+-------------------+
+| City Lights | 1931 | Charlie Chaplin   |
+| Modern Times| 1936 | Charlie Chaplin   |
+| Annie Hall  | 1977 | Woody Allen       |
++-------------+------+-------------------+

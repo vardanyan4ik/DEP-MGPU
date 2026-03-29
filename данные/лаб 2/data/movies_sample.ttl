@@ -1,0 +1,90 @@
+@prefix ex: <http://example.org/movie/> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:Movie a schema:Class .
+
+ex:KeanuReeves a schema:Person ; schema:name "Keanu Reeves" .
+ex:LanaWachowski a schema:Person ; schema:name "Lana Wachowski" .
+ex:ChristopherNolan a schema:Person ; schema:name "Christopher Nolan" .
+ex:LeonardoDiCaprio a schema:Person ; schema:name "Leonardo DiCaprio" .
+ex:MatthewMcConaughey a schema:Person ; schema:name "Matthew McConaughey" .
+ex:CharlieChaplin a schema:Person ; schema:name "Charlie Chaplin" .
+ex:WoodyAllen a schema:Person ; schema:name "Woody Allen" .
+ex:MarlonBrando a schema:Person ; schema:name "Marlon Brando" .
+ex:FrancisCoppola a schema:Person ; schema:name "Francis Ford Coppola" .
+ex:SylvesterStallone a schema:Person ; schema:name "Sylvester Stallone" .
+ex:JohnAvildsen a schema:Person ; schema:name "John G. Avildsen" .
+ex:ChristianBale a schema:Person ; schema:name "Christian Bale" .
+ex:TimotheeChalamet a schema:Person ; schema:name "Timothee Chalamet" .
+ex:DenisVilleneuve a schema:Person ; schema:name "Denis Villeneuve" .
+
+ex:TheMatrix a ex:Movie ;
+  schema:name "The Matrix" ;
+  ex:releaseYear 1999 ;
+  ex:commentCount 15430 ;
+  ex:hasActor ex:KeanuReeves ;
+  ex:hasDirector ex:LanaWachowski .
+
+ex:Inception a ex:Movie ;
+  schema:name "Inception" ;
+  ex:releaseYear 2010 ;
+  ex:commentCount 12840 ;
+  ex:hasActor ex:LeonardoDiCaprio ;
+  ex:hasDirector ex:ChristopherNolan .
+
+ex:Interstellar a ex:Movie ;
+  schema:name "Interstellar" ;
+  ex:releaseYear 2014 ;
+  ex:commentCount 11990 ;
+  ex:hasActor ex:MatthewMcConaughey ;
+  ex:hasDirector ex:ChristopherNolan .
+
+ex:TheDarkKnight a ex:Movie ;
+  schema:name "The Dark Knight" ;
+  ex:releaseYear 2008 ;
+  ex:commentCount 20120 ;
+  ex:hasActor ex:ChristianBale ;
+  ex:hasDirector ex:ChristopherNolan .
+
+ex:CityLights a ex:Movie ;
+  schema:name "City Lights" ;
+  ex:releaseYear 1931 ;
+  ex:commentCount 880 ;
+  ex:hasActor ex:CharlieChaplin ;
+  ex:hasDirector ex:CharlieChaplin .
+
+ex:ModernTimes a ex:Movie ;
+  schema:name "Modern Times" ;
+  ex:releaseYear 1936 ;
+  ex:commentCount 960 ;
+  ex:hasActor ex:CharlieChaplin ;
+  ex:hasDirector ex:CharlieChaplin .
+
+ex:AnnieHall a ex:Movie ;
+  schema:name "Annie Hall" ;
+  ex:releaseYear 1977 ;
+  ex:commentCount 1210 ;
+  ex:hasActor ex:WoodyAllen ;
+  ex:hasDirector ex:WoodyAllen .
+
+ex:TheGodfather a ex:Movie ;
+  schema:name "The Godfather" ;
+  ex:releaseYear 1972 ;
+  ex:commentCount 7340 ;
+  ex:hasActor ex:MarlonBrando ;
+  ex:hasDirector ex:FrancisCoppola .
+
+ex:Rocky a ex:Movie ;
+  schema:name "Rocky" ;
+  ex:releaseYear 1976 ;
+  ex:commentCount 4100 ;
+  ex:hasActor ex:SylvesterStallone ;
+  ex:hasDirector ex:JohnAvildsen .
+
+ex:DunePartTwo a ex:Movie ;
+  schema:name "Dune: Part Two" ;
+  ex:releaseYear 2024 ;
+  ex:commentCount 2640 ;
+  ex:hasActor ex:TimotheeChalamet ;
+  ex:hasDirector ex:DenisVilleneuve .

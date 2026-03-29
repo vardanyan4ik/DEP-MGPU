@@ -1,0 +1,13 @@
+$ cd ~/Downloads/dba/nonrel/graphdb
+$ sudo docker compose stop
+[+] Stopping 6/6
+ ✔ Container lab2_graphdb           Stopped
+ ✔ Container lab2_cassandra         Stopped
+ ✔ Container lab2_mongodb           Stopped
+$ sudo docker compose start
+[+] Running 6/6
+ ✔ Container lab2_mongodb           Started
+ ✔ Container lab2_mongo_express     Started
+ ✔ Container lab2_cassandra         Started
+ ✔ Container lab2_graphdb           Started
+ ✔ Container lab2_redis             Started

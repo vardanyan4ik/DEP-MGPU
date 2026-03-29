@@ -1,0 +1,14 @@
+PREFIX ex: <http://example.org/movie/>
+PREFIX schema: <http://schema.org/>
+
+SELECT ?title ?year ?personName
+WHERE {
+  ?movie a ex:Movie ;
+         schema:name ?title ;
+         ex:releaseYear ?year ;
+         ex:hasActor ?person ;
+         ex:hasDirector ?person .
+  ?person schema:name ?personName .
+  FILTER (?year < 1980)
+}
+ORDER BY ?year

@@ -1,0 +1,13 @@
+SPARQL: 01_movies_gt_1000_comments.rq
++--------------------+------+----------+
+| title              | year | comments |
++--------------------+------+----------+
+| The Dark Knight    | 2008 | 20120    |
+| The Matrix         | 1999 | 15430    |
+| Inception          | 2010 | 12840    |
+| Interstellar       | 2014 | 11990    |
+| The Godfather      | 1972 | 7340     |
+| Rocky              | 1976 | 4100     |
+| Dune: Part Two     | 2024 | 2640     |
+| Annie Hall         | 1977 | 1210     |
++--------------------+------+----------+

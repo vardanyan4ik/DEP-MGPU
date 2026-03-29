@@ -1,0 +1,14 @@
+PREFIX ex: <http://example.org/movie/>
+PREFIX schema: <http://schema.org/>
+
+SELECT
+  (IF(?year < 1980, "classic", "modern") AS ?period)
+  (COUNT(?movie) AS ?movies)
+  (AVG(?comments) AS ?avg_comments)
+WHERE {
+  ?movie a ex:Movie ;
+         ex:releaseYear ?year ;
+         ex:commentCount ?comments .
+}
+GROUP BY (IF(?year < 1980, "classic", "modern"))
+ORDER BY ?period

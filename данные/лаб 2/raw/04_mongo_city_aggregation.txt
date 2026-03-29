@@ -1,0 +1,10 @@
+$ mongosh < scripts/mongo/02_variant9_city_aggregation.js
+=== Users by City ===
+[
+  { _id: 'Moscow', users_count: 6, premium_count: 3 },
+  { _id: 'Kazan', users_count: 4, premium_count: 2 },
+  { _id: 'Novosibirsk', users_count: 3, premium_count: 2 },
+  { _id: 'Saint Petersburg', users_count: 3, premium_count: 3 },
+  { _id: 'Ekaterinburg', users_count: 2, premium_count: 0 },
+  { _id: 'Sochi', users_count: 2, premium_count: 1 }
+]

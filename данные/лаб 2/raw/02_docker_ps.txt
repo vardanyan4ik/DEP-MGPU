@@ -1,0 +1,8 @@
+$ docker ps --format 'table {{.Names}}\t{{.Image}}\t{{.Status}}\t{{.Ports}}'
+NAMES                 IMAGE                              STATUS            PORTS
+lab2_mongodb          mongo:7.0                          Up 2 min          0.0.0.0:28217->27017/tcp
+lab2_mongo_express    mongo-express:1.0.2                Up 2 min          0.0.0.0:28203->8081/tcp
+lab2_mongo_admin      mongo-express:1.0.2                Up 2 min          0.0.0.0:28204->8081/tcp
+lab2_cassandra        cassandra:4.1                      Up 2 min          0.0.0.0:29042->9042/tcp
+lab2_graphdb          ontotext/graphdb:10.6.4            Up 2 min          0.0.0.0:7200->7200/tcp
+lab2_redis_commander  rediscommander/redis-commander     Up 2 min          0.0.0.0:28119->8081/tcp
