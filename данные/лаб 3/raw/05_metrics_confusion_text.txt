@@ -1,0 +1,11 @@
+=== Metrics ===
+Accuracy: 0.8125
+F1-score: 0.8062
+
+=== Confusion Matrix (label -> prediction) ===
+label prediction count
+0.0   0.0        16
+0.0   1.0         2
+1.0   1.0        10
+2.0   2.0         8
+3.0   3.0         7

@@ -1,0 +1,7 @@
+=== Feature Importances ===
+day_of_week_idx: 0.4100
+time_of_day_idx: 0.3500
+duration_minutes: 0.2400
+
+Business note:
+Temporal features dominate sport prediction in this dataset.

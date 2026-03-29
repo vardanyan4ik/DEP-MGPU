@@ -1,0 +1,8 @@
+$ git clone https://github.com/BosenkoTM/PySpark.git
+$ cd PySpark
+$ sudo docker compose up -d
+[+] Running 3/3
+ ✔ Container spark-master   Started
+ ✔ Container spark-worker   Started
+ ✔ Container jupyter-lab    Started
+$ open http://localhost:10000/lab

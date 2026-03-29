@@ -1,0 +1,8 @@
+Pipeline stages:
+1) StringIndexer(time_of_day)
+2) StringIndexer(day_of_week)
+3) StringIndexer(sport -> label)
+4) VectorAssembler([time_of_day_idx, day_of_week_idx, duration_minutes])
+5) RandomForestClassifier(numTrees=80, maxDepth=8)
+Train/Test split: 80/20
+Train rows: 144 | Test rows: 36

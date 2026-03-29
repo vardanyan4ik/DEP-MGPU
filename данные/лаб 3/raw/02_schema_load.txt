@@ -1,0 +1,9 @@
+$ python3 lab_03_variant_09.py
+Using input: data/endomondo_sample.json
+=== Schema ===
+root
+ |-- gender: string (nullable = true)
+ |-- heart_rate: array (nullable = true)
+ |-- sport: string (nullable = true)
+ |-- timestamp_end: string (nullable = true)
+ |-- timestamp_start: string (nullable = true)

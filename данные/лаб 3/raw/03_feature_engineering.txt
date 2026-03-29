@@ -1,0 +1,9 @@
+=== Prepared sample ===
++--------+-----------+-----------+----------------+
+|sport   |time_of_day|day_of_week|duration_minutes|
++--------+-----------+-----------+----------------+
+|running |morning    |Mon        |58.0            |
+|cycling |evening    |Wed        |72.0            |
+|gym     |evening    |Fri        |46.0            |
+|walking |day        |Sun        |39.0            |
++--------+-----------+-----------+----------------+
