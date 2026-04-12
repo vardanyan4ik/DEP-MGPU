@@ -1,0 +1,10 @@
+$ stop-yarn.sh
+stopping yarn daemons
+stopping resourcemanager
+localhost: stopping nodemanager
+$ stop-dfs.sh
+Stopping namenodes on [localhost]
+localhost: stopping namenode
+localhost: stopping datanode
+Stopping secondary namenodes [hadoop-vm]
+hadoop-vm: stopping secondarynamenode

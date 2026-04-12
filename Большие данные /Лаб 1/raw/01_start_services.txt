@@ -1,0 +1,12 @@
+$ sudo su - hadoop
+$ start-dfs.sh
+Starting namenodes on [localhost]
+localhost: starting namenode, logging to /home/hadoop/hadoop/logs/hadoop-hadoop-namenode-localhost.out
+localhost: starting datanode, logging to /home/hadoop/hadoop/logs/hadoop-hadoop-datanode-localhost.out
+Starting secondary namenodes [hadoop-vm]
+hadoop-vm: starting secondarynamenode, logging to /home/hadoop/hadoop/logs/hadoop-hadoop-secondarynamenode-hadoop-vm.out
+$ start-yarn.sh
+starting yarn daemons
+starting resourcemanager, logging to /home/hadoop/hadoop/logs/yarn-hadoop-resourcemanager-hadoop-vm.out
+starting nodemanagers
+localhost: starting nodemanager, logging to /home/hadoop/hadoop/logs/yarn-hadoop-nodemanager-localhost.out
