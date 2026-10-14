@@ -1,0 +1,13 @@
+beautifulsoup4
+jupyter
+lxml
+matplotlib
+nest-asyncio
+numpy
+openpyxl
+pandas
+playwright
+requests
+seaborn
+selenium
+urllib3
