@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Environment and secrets
+.env
+.env.*
+*.pem
+*.key
+credentials*.json
+token*.json
+
+# OS and editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Temporary browser files
+playwright-report/
+test-results/
+selenium-profile/
