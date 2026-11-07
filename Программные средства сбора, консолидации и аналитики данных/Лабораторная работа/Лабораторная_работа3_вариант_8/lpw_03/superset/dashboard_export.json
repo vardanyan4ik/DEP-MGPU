@@ -1,0 +1,690 @@
+{
+  "dashboard_export_20261104T210457/metadata.yaml": {
+    "version": "1.0.0",
+    "type": "Dashboard",
+    "timestamp": "2026-11-04T21:04:57.235210+00:00"
+  },
+  "dashboard_export_20261104T210457/dashboards/Variant_8_Student_Performance_1.yaml": {
+    "dashboard_title": "Variant 8 · Student Performance",
+    "description": null,
+    "css": null,
+    "slug": "student-performance-08",
+    "certified_by": null,
+    "certification_details": null,
+    "published": true,
+    "uuid": "589a16f8-dac8-46b9-a9d0-456c76abe607",
+    "position": {
+      "DASHBOARD_VERSION_KEY": "v2",
+      "ROOT_ID": {
+        "id": "ROOT_ID",
+        "type": "ROOT",
+        "children": [
+          "GRID_ID"
+        ]
+      },
+      "GRID_ID": {
+        "id": "GRID_ID",
+        "type": "GRID",
+        "children": [
+          "ROW-0",
+          "ROW-1",
+          "ROW-2",
+          "ROW-N-FME4SQ2V"
+        ],
+        "parents": [
+          "ROOT_ID"
+        ]
+      },
+      "ROW-0": {
+        "id": "ROW-0",
+        "type": "ROW",
+        "children": [
+          "CHART-1"
+        ],
+        "parents": [
+          "ROOT_ID",
+          "GRID_ID"
+        ],
+        "meta": {
+          "background": "BACKGROUND_TRANSPARENT"
+        }
+      },
+      "CHART-1": {
+        "id": "CHART-1",
+        "type": "CHART",
+        "children": [],
+        "parents": [
+          "ROOT_ID",
+          "GRID_ID",
+          "ROW-0"
+        ],
+        "meta": {
+          "chartId": 1,
+          "width": 12,
+          "height": 22,
+          "sliceName": "Mean final grade (0–20)"
+        }
+      },
+      "ROW-1": {
+        "id": "ROW-1",
+        "type": "ROW",
+        "children": [
+          "CHART-2",
+          "CHART-3"
+        ],
+        "parents": [
+          "ROOT_ID",
+          "GRID_ID"
+        ],
+        "meta": {
+          "background": "BACKGROUND_TRANSPARENT"
+        }
+      },
+      "CHART-2": {
+        "id": "CHART-2",
+        "type": "CHART",
+        "children": [],
+        "parents": [
+          "ROOT_ID",
+          "GRID_ID",
+          "ROW-1"
+        ],
+        "meta": {
+          "chartId": 2,
+          "width": 6,
+          "height": 45,
+          "sliceName": "Final grade by weekly study time"
+        }
+      },
+      "CHART-3": {
+        "id": "CHART-3",
+        "type": "CHART",
+        "children": [],
+        "parents": [
+          "ROOT_ID",
+          "GRID_ID",
+          "ROW-1"
+        ],
+        "meta": {
+          "chartId": 3,
+          "width": 6,
+          "height": 45,
+          "sliceName": "Highest parental education"
+        }
+      },
+      "ROW-2": {
+        "id": "ROW-2",
+        "type": "ROW",
+        "children": [
+          "CHART-4",
+          "CHART-5"
+        ],
+        "parents": [
+          "ROOT_ID",
+          "GRID_ID"
+        ],
+        "meta": {
+          "background": "BACKGROUND_TRANSPARENT"
+        }
+      },
+      "CHART-4": {
+        "id": "CHART-4",
+        "type": "CHART",
+        "children": [],
+        "parents": [
+          "ROOT_ID",
+          "GRID_ID",
+          "ROW-2"
+        ],
+        "meta": {
+          "chartId": 4,
+          "width": 6,
+          "height": 45,
+          "sliceName": "Grades and absences by study time"
+        }
+      },
+      "CHART-5": {
+        "id": "CHART-5",
+        "type": "CHART",
+        "children": [],
+        "parents": [
+          "ROOT_ID",
+          "GRID_ID",
+          "ROW-2"
+        ],
+        "meta": {
+          "chartId": 5,
+          "width": 6,
+          "height": 45,
+          "sliceName": "Final grade by number of absences"
+        }
+      },
+      "ROW-N-FME4SQ2V": {
+        "children": [
+          "CHART-KMLZ59R1",
+          "CHART-XRWX56LL",
+          "CHART-F5RQ1926",
+          "CHART-FMRDRMCR",
+          "CHART-PLH2XR7G"
+        ],
+        "id": "ROW-N-FME4SQ2V",
+        "meta": {
+          "0": "ROOT_ID",
+          "background": "BACKGROUND_TRANSPARENT"
+        },
+        "type": "ROW",
+        "parents": [
+          "ROOT_ID",
+          "GRID_ID"
+        ]
+      },
+      "CHART-KMLZ59R1": {
+        "children": [],
+        "id": "CHART-KMLZ59R1",
+        "meta": {
+          "chartId": 1,
+          "height": 50,
+          "sliceName": "Mean final grade (0–20)",
+          "uuid": "ac7fdde7-e685-4155-86e4-e6251e9990b6",
+          "width": 4
+        },
+        "type": "CHART",
+        "parents": [
+          "ROOT_ID",
+          "GRID_ID",
+          "ROW-N-FME4SQ2V"
+        ]
+      },
+      "CHART-XRWX56LL": {
+        "children": [],
+        "id": "CHART-XRWX56LL",
+        "meta": {
+          "chartId": 5,
+          "height": 50,
+          "sliceName": "Final grade by number of absences",
+          "uuid": "e22a36f7-6cf7-4e3b-903e-f125408f8f75",
+          "width": 4
+        },
+        "type": "CHART",
+        "parents": [
+          "ROOT_ID",
+          "GRID_ID",
+          "ROW-N-FME4SQ2V"
+        ]
+      },
+      "CHART-F5RQ1926": {
+        "children": [],
+        "id": "CHART-F5RQ1926",
+        "meta": {
+          "chartId": 2,
+          "height": 50,
+          "sliceName": "Final grade by weekly study time",
+          "uuid": "ae195de6-0b20-4d94-9d25-57dbc414e5e0",
+          "width": 4
+        },
+        "type": "CHART",
+        "parents": [
+          "ROOT_ID",
+          "GRID_ID",
+          "ROW-N-FME4SQ2V"
+        ]
+      },
+      "CHART-FMRDRMCR": {
+        "children": [],
+        "id": "CHART-FMRDRMCR",
+        "meta": {
+          "chartId": 4,
+          "height": 50,
+          "sliceName": "Grades and absences by study time",
+          "uuid": "c066e67d-0824-47cd-b74a-1779d9798326",
+          "width": 4
+        },
+        "type": "CHART",
+        "parents": [
+          "ROOT_ID",
+          "GRID_ID",
+          "ROW-N-FME4SQ2V"
+        ]
+      },
+      "CHART-PLH2XR7G": {
+        "children": [],
+        "id": "CHART-PLH2XR7G",
+        "meta": {
+          "chartId": 3,
+          "height": 50,
+          "sliceName": "Highest parental education",
+          "uuid": "b3567672-822a-41a7-b4fb-ef894377f8a7",
+          "width": 4
+        },
+        "type": "CHART",
+        "parents": [
+          "ROOT_ID",
+          "GRID_ID",
+          "ROW-N-FME4SQ2V"
+        ]
+      }
+    },
+    "metadata": {
+      "native_filter_configuration": [
+        {
+          "id": "NATIVE_FILTER-school",
+          "name": "School",
+          "filterType": "filter_select",
+          "targets": [
+            {
+              "column": {
+                "name": "school"
+              },
+              "datasetUuid": "8abc6963-92ee-4fa8-80b5-27e460002f40"
+            }
+          ],
+          "defaultDataMask": {
+            "extraFormData": {},
+            "filterState": {},
+            "ownState": {}
+          },
+          "controlValues": {
+            "enableEmptyFilter": false,
+            "multiSelect": true,
+            "searchAllOptions": false,
+            "inverseSelection": false
+          },
+          "cascadeParentIds": [],
+          "scope": {
+            "rootPath": [
+              "ROOT_ID"
+            ],
+            "excluded": []
+          },
+          "type": "NATIVE_FILTER"
+        },
+        {
+          "id": "NATIVE_FILTER-study_time_group",
+          "name": "Weekly study time",
+          "filterType": "filter_select",
+          "targets": [
+            {
+              "column": {
+                "name": "study_time_group"
+              },
+              "datasetUuid": "8abc6963-92ee-4fa8-80b5-27e460002f40"
+            }
+          ],
+          "defaultDataMask": {
+            "extraFormData": {},
+            "filterState": {},
+            "ownState": {}
+          },
+          "controlValues": {
+            "enableEmptyFilter": false,
+            "multiSelect": true,
+            "searchAllOptions": false,
+            "inverseSelection": false
+          },
+          "cascadeParentIds": [],
+          "scope": {
+            "rootPath": [
+              "ROOT_ID"
+            ],
+            "excluded": []
+          },
+          "type": "NATIVE_FILTER"
+        }
+      ],
+      "color_scheme": "supersetColors"
+    },
+    "version": "1.0.0"
+  },
+  "dashboard_export_20261104T210457/charts/Mean_final_grade_020_1.yaml": {
+    "slice_name": "Mean final grade (0–20)",
+    "description": null,
+    "certified_by": null,
+    "certification_details": null,
+    "viz_type": "big_number_total",
+    "params": {
+      "datasource": "1__table",
+      "adhoc_filters": [],
+      "row_limit": 10000,
+      "time_range": "No filter",
+      "viz_type": "big_number_total",
+      "metric": {
+        "expressionType": "SIMPLE",
+        "column": {
+          "column_name": "final_grade"
+        },
+        "aggregate": "AVG",
+        "label": "AVG(final_grade)",
+        "optionName": "AVG_final_grade"
+      },
+      "subheader": "Mathematics · UCI",
+      "y_axis_format": ".2f"
+    },
+    "query_context": null,
+    "cache_timeout": null,
+    "uuid": "ac7fdde7-e685-4155-86e4-e6251e9990b6",
+    "version": "1.0.0",
+    "dataset_uuid": "8abc6963-92ee-4fa8-80b5-27e460002f40"
+  },
+  "dashboard_export_20261104T210457/datasets/Student_Analytics/student_datamart.yaml": {
+    "table_name": "student_datamart",
+    "main_dttm_col": null,
+    "description": null,
+    "default_endpoint": null,
+    "offset": 0,
+    "cache_timeout": null,
+    "catalog": null,
+    "schema": "public",
+    "sql": null,
+    "params": null,
+    "template_params": null,
+    "filter_select_enabled": true,
+    "fetch_values_predicate": null,
+    "extra": null,
+    "normalize_columns": false,
+    "always_filter_main_dttm": false,
+    "uuid": "8abc6963-92ee-4fa8-80b5-27e460002f40",
+    "metrics": [
+      {
+        "metric_name": "count",
+        "verbose_name": "COUNT(*)",
+        "metric_type": "count",
+        "expression": "COUNT(*)",
+        "description": null,
+        "d3format": null,
+        "currency": null,
+        "extra": null,
+        "warning_text": null
+      }
+    ],
+    "columns": [
+      {
+        "column_name": "parent_education_order",
+        "verbose_name": null,
+        "is_dttm": false,
+        "is_active": true,
+        "type": "INTEGER",
+        "advanced_data_type": null,
+        "groupby": true,
+        "filterable": true,
+        "expression": null,
+        "description": null,
+        "python_date_format": null,
+        "extra": null
+      },
+      {
+        "column_name": "study_time_order",
+        "verbose_name": null,
+        "is_dttm": false,
+        "is_active": true,
+        "type": "INTEGER",
+        "advanced_data_type": null,
+        "groupby": true,
+        "filterable": true,
+        "expression": null,
+        "description": null,
+        "python_date_format": null,
+        "extra": null
+      },
+      {
+        "column_name": "final_grade",
+        "verbose_name": null,
+        "is_dttm": false,
+        "is_active": true,
+        "type": "INTEGER",
+        "advanced_data_type": null,
+        "groupby": true,
+        "filterable": true,
+        "expression": null,
+        "description": null,
+        "python_date_format": null,
+        "extra": null
+      },
+      {
+        "column_name": "row_id",
+        "verbose_name": null,
+        "is_dttm": false,
+        "is_active": true,
+        "type": "INTEGER",
+        "advanced_data_type": null,
+        "groupby": true,
+        "filterable": true,
+        "expression": null,
+        "description": null,
+        "python_date_format": null,
+        "extra": null
+      },
+      {
+        "column_name": "absences",
+        "verbose_name": null,
+        "is_dttm": false,
+        "is_active": true,
+        "type": "INTEGER",
+        "advanced_data_type": null,
+        "groupby": true,
+        "filterable": true,
+        "expression": null,
+        "description": null,
+        "python_date_format": null,
+        "extra": null
+      },
+      {
+        "column_name": "parent_education_level",
+        "verbose_name": null,
+        "is_dttm": false,
+        "is_active": true,
+        "type": "TEXT",
+        "advanced_data_type": null,
+        "groupby": true,
+        "filterable": true,
+        "expression": null,
+        "description": null,
+        "python_date_format": null,
+        "extra": null
+      },
+      {
+        "column_name": "study_time_group",
+        "verbose_name": null,
+        "is_dttm": false,
+        "is_active": true,
+        "type": "TEXT",
+        "advanced_data_type": null,
+        "groupby": true,
+        "filterable": true,
+        "expression": null,
+        "description": null,
+        "python_date_format": null,
+        "extra": null
+      },
+      {
+        "column_name": "school",
+        "verbose_name": null,
+        "is_dttm": false,
+        "is_active": true,
+        "type": "TEXT",
+        "advanced_data_type": null,
+        "groupby": true,
+        "filterable": true,
+        "expression": null,
+        "description": null,
+        "python_date_format": null,
+        "extra": null
+      }
+    ],
+    "version": "1.0.0",
+    "database_uuid": "307ecc4b-7237-4486-8f3a-b17ee9c9d4c1"
+  },
+  "dashboard_export_20261104T210457/databases/Student_Analytics.yaml": {
+    "database_name": "Student Analytics",
+    "sqlalchemy_uri": "postgresql+psycopg2://analytics:analytics@analytics_postgres:5432/analytics",
+    "cache_timeout": null,
+    "expose_in_sqllab": true,
+    "allow_run_async": false,
+    "allow_ctas": false,
+    "allow_cvas": false,
+    "allow_dml": false,
+    "allow_file_upload": false,
+    "extra": {
+      "metadata_params": {},
+      "engine_params": {},
+      "metadata_cache_timeout": {},
+      "schemas_allowed_for_file_upload": []
+    },
+    "uuid": "307ecc4b-7237-4486-8f3a-b17ee9c9d4c1",
+    "version": "1.0.0"
+  },
+  "dashboard_export_20261104T210457/charts/Final_grade_by_weekly_study_time_2.yaml": {
+    "slice_name": "Final grade by weekly study time",
+    "description": null,
+    "certified_by": null,
+    "certification_details": null,
+    "viz_type": "echarts_timeseries_bar",
+    "params": {
+      "datasource": "1__table",
+      "adhoc_filters": [],
+      "row_limit": 10000,
+      "time_range": "No filter",
+      "viz_type": "echarts_timeseries_bar",
+      "x_axis": "study_time_group",
+      "metrics": [
+        {
+          "expressionType": "SIMPLE",
+          "column": {
+            "column_name": "final_grade"
+          },
+          "aggregate": "AVG",
+          "label": "AVG(final_grade)",
+          "optionName": "AVG_final_grade"
+        }
+      ],
+      "groupby": [],
+      "x_axis_sort_asc": true,
+      "x_axis_title": "Weekly study time",
+      "y_axis_title": "Mean grade (0–20)"
+    },
+    "query_context": null,
+    "cache_timeout": null,
+    "uuid": "ae195de6-0b20-4d94-9d25-57dbc414e5e0",
+    "version": "1.0.0",
+    "dataset_uuid": "8abc6963-92ee-4fa8-80b5-27e460002f40"
+  },
+  "dashboard_export_20261104T210457/charts/Highest_parental_education_3.yaml": {
+    "slice_name": "Highest parental education",
+    "description": null,
+    "certified_by": null,
+    "certification_details": null,
+    "viz_type": "pie",
+    "params": {
+      "datasource": "1__table",
+      "adhoc_filters": [],
+      "row_limit": 10000,
+      "time_range": "No filter",
+      "viz_type": "pie",
+      "groupby": [
+        "parent_education_level"
+      ],
+      "metric": {
+        "expressionType": "SQL",
+        "sqlExpression": "COUNT(*)",
+        "label": "Students",
+        "optionName": "count_students"
+      },
+      "show_labels": true,
+      "show_legend": true,
+      "label_type": "key_percent"
+    },
+    "query_context": null,
+    "cache_timeout": null,
+    "uuid": "b3567672-822a-41a7-b4fb-ef894377f8a7",
+    "version": "1.0.0",
+    "dataset_uuid": "8abc6963-92ee-4fa8-80b5-27e460002f40"
+  },
+  "dashboard_export_20261104T210457/charts/Grades_and_absences_by_study_time_4.yaml": {
+    "slice_name": "Grades and absences by study time",
+    "description": null,
+    "certified_by": null,
+    "certification_details": null,
+    "viz_type": "mixed_timeseries",
+    "params": {
+      "datasource": "1__table",
+      "adhoc_filters": [],
+      "row_limit": 10000,
+      "time_range": "No filter",
+      "viz_type": "mixed_timeseries",
+      "x_axis": "study_time_group",
+      "metrics": [
+        {
+          "expressionType": "SIMPLE",
+          "column": {
+            "column_name": "final_grade"
+          },
+          "aggregate": "AVG",
+          "label": "AVG(final_grade)",
+          "optionName": "AVG_final_grade"
+        }
+      ],
+      "metrics_b": [
+        {
+          "expressionType": "SIMPLE",
+          "column": {
+            "column_name": "absences"
+          },
+          "aggregate": "AVG",
+          "label": "AVG(absences)",
+          "optionName": "AVG_absences"
+        }
+      ],
+      "groupby": [],
+      "groupby_b": [],
+      "adhoc_filters_b": [],
+      "seriesType": "bar",
+      "seriesTypeB": "line",
+      "y_axis_title": "Mean grade (0–20)",
+      "y_axis_title_secondary": "Mean absences",
+      "yAxisIndex": 0,
+      "yAxisIndexB": 1,
+      "show_legend": true,
+      "x_axis_sort_asc": true
+    },
+    "query_context": null,
+    "cache_timeout": null,
+    "uuid": "c066e67d-0824-47cd-b74a-1779d9798326",
+    "version": "1.0.0",
+    "dataset_uuid": "8abc6963-92ee-4fa8-80b5-27e460002f40"
+  },
+  "dashboard_export_20261104T210457/charts/Final_grade_by_number_of_absences_5.yaml": {
+    "slice_name": "Final grade by number of absences",
+    "description": null,
+    "certified_by": null,
+    "certification_details": null,
+    "viz_type": "echarts_timeseries_line",
+    "params": {
+      "datasource": "1__table",
+      "adhoc_filters": [],
+      "row_limit": 10000,
+      "time_range": "No filter",
+      "viz_type": "echarts_timeseries_line",
+      "x_axis": "absences",
+      "metrics": [
+        {
+          "expressionType": "SIMPLE",
+          "column": {
+            "column_name": "final_grade"
+          },
+          "aggregate": "AVG",
+          "label": "AVG(final_grade)",
+          "optionName": "AVG_final_grade"
+        }
+      ],
+      "groupby": [],
+      "x_axis_sort_asc": true,
+      "x_axis_title": "Absences",
+      "y_axis_title": "Mean grade (0–20)",
+      "markerEnabled": true
+    },
+    "query_context": null,
+    "cache_timeout": null,
+    "uuid": "e22a36f7-6cf7-4e3b-903e-f125408f8f75",
+    "version": "1.0.0",
+    "dataset_uuid": "8abc6963-92ee-4fa8-80b5-27e460002f40"
+  }
+}
